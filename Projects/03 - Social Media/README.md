@@ -1,4 +1,4 @@
-# Storm Viewer
+# Social Media
 
 ## Topics
 UIBarButtonItem, UIActivityController
