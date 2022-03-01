@@ -11,7 +11,7 @@
         <!--View Controller-->
         <scene sceneID="loo-OT-qK5">
             <objects>
-                <tableViewController id="oxh-GF-gVQ" customClass="ViewController" customModule="storm_viewer" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="oxh-GF-gVQ" customClass="ViewController" customModule="Storm_Viewer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Gel-xx-EUG">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,9 @@
                             <outlet property="delegate" destination="oxh-GF-gVQ" id="f3h-e9-KZH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="v8f-om-AhZ"/>
+                    <navigationItem key="navigationItem" id="v8f-om-AhZ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="q1Y-ML-WUM"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K4v-UE-Pfa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -49,7 +51,7 @@
         <!--Detail View Controller-->
         <scene sceneID="tZq-Z4-BXX">
             <objects>
-                <viewController storyboardIdentifier="Detail" id="eJZ-eJ-Jmd" customClass="DetailViewController" customModule="storm_viewer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Detail" id="eJZ-eJ-Jmd" customClass="DetailViewController" customModule="Storm_Viewer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QSa-nd-ovT">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

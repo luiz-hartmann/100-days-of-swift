@@ -8,13 +8,17 @@
 import UIKit
 
 class ViewController: UITableViewController {
+    
     var pictures = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
         title = "Storm Viewer"
+        
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
         
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
@@ -26,6 +30,7 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
+        
         pictures.sort()
     }
     
@@ -51,7 +56,17 @@ class ViewController: UITableViewController {
             navigationController?.pushViewController(viewController, animated: true)
         }
     }
+    
+    let message = "This app is great, share it with your friends!"
+    let url = URL (string: "https://www.hackingwithswift.com/read/3/3/wrap-up")!
+   
+    @objc func shareTapped() {
+        let items = UIActivityViewController(activityItems: [message, url], applicationActivities: [])
+        items.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(items, animated: true)
+    }
 }
+
 
     
 
