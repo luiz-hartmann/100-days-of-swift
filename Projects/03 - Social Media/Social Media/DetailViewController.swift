@@ -19,7 +19,9 @@ class DetailViewController: UIViewController {
         navigationItem.largeTitleDisplayMode = .never
 
         // title = selectedImage
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        let rightBarButton = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        navigationItem.rightBarButtonItem = rightBarButton
+        
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
         }
@@ -37,6 +39,7 @@ class DetailViewController: UIViewController {
     
     @objc func shareTapped() {
         guard let image = imageView.image?.jpegData(compressionQuality: 0.8) else {
+            
             print("No image found")
             return
         }
