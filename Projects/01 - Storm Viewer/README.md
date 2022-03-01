@@ -12,7 +12,7 @@ From [Hacking with Swift](https://www.hackingwithswift.com/read/1/7/wrap-up):
 
 ## Screenshots
 
-![screen1](screenshots/screen01.png)
-![screen2](screenshots/screen02.png)
+![screen1](screenshots/screen1.png)
+![screen2](screenshots/screen2.png)
 
 
