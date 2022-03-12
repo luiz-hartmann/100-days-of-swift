@@ -24,11 +24,12 @@ class WebViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let url = URL(string: "https://")!
         webView.load(URLRequest(url: url))
         webView.allowsBackForwardNavigationGestures = true
         
+        navigationItem.largeTitleDisplayMode = .never
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Open", style: .plain, target: self, action: #selector(openTapped))
         
         progressView = UIProgressView(progressViewStyle: .default)

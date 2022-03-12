@@ -43,7 +43,7 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pz3-n2-fVr">
                                             <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -56,9 +56,7 @@
                             <outlet property="delegate" destination="YeN-k1-EwD" id="0ZI-6m-l7u"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="4It-eW-Ydt">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="bbm-i4-Fqr"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="4It-eW-Ydt"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fp-DS-cGa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

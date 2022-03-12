@@ -10,7 +10,6 @@ import UIKit
 class WebTableViewController: UITableViewController {
 
     var websites = ["apple.com", "hackingwithswift.com"]
-    var blockedUrl = ["google.com"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +30,8 @@ class WebTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
-        viewController.websites = websites
-        viewController.blockedUrl = blockedUrl
         navigationController?.pushViewController(viewController, animated: true)
     }
 }
+
+
