@@ -8,13 +8,13 @@
 import UIKit
 import WebKit
 
-class ViewController: UIViewController, WKNavigationDelegate {
+class WebViewController: UIViewController, WKNavigationDelegate {
     
     var webView: WKWebView!
     var progressView: UIProgressView!
     
     var websites = ["apple.com", "hackingwithswift.com"]
-    var urlNotAllowed = ["google.com"]
+    var blockedUrl = ["google.com"]
     
     override func loadView() {
         webView = WKWebView()
@@ -65,8 +65,8 @@ class ViewController: UIViewController, WKNavigationDelegate {
         }
 
         if let host = url?.host {
-            for urlNotAllow in urlNotAllowed {
-                if host.contains(urlNotAllow) {
+            for url in blockedUrl {
+                if host.contains(url) {
                     decisionHandler(.cancel)
                     
                     let alert = UIAlertController(title: "URL Not Allowed", message: "Access denied", preferredStyle: .alert)
@@ -87,7 +87,7 @@ class ViewController: UIViewController, WKNavigationDelegate {
             alertController.addAction(UIAlertAction(title: website, style: .default, handler: openPage))
         }
        
-        for url in urlNotAllowed {
+        for url in blockedUrl {
             alertController.addAction(UIAlertAction(title: url, style: .default, handler: openPage))
         }
 
@@ -100,7 +100,6 @@ class ViewController: UIViewController, WKNavigationDelegate {
         let url = URL(string: "https://" + action.title!)!
         webView.load(URLRequest(url: url))
     }
-    
     
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         title = webView.title
