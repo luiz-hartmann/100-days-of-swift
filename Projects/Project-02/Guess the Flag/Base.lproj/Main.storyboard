@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0fi-Z6-JpS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0fi-Z6-JpS">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,6 +18,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF8-r6-3Zp">
                                 <rect key="frame" x="107" y="126" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tF8-r6-3Zp" secondAttribute="height" multiplier="2:1" id="PXJ-21-c8f"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -26,6 +29,9 @@
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QbT-L7-xpw">
                                 <rect key="frame" x="107" y="256" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QbT-L7-xpw" secondAttribute="height" multiplier="2:1" id="1Tv-Hi-SGG"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -34,6 +40,9 @@
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tZ-a4-4pb">
                                 <rect key="frame" x="107" y="386" width="200" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4tZ-a4-4pb" secondAttribute="height" multiplier="2:1" id="GII-sL-CQy"/>
+                                </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="us"/>
                                 <connections>
@@ -49,7 +58,10 @@
                             <constraint firstItem="tF8-r6-3Zp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="Kje-9N-zKj"/>
                             <constraint firstItem="tF8-r6-3Zp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OcM-XL-cwg"/>
                             <constraint firstItem="QbT-L7-xpw" firstAttribute="top" secondItem="tF8-r6-3Zp" secondAttribute="bottom" constant="30" id="Rg3-qR-jtx"/>
+                            <constraint firstItem="4tZ-a4-4pb" firstAttribute="height" secondItem="QbT-L7-xpw" secondAttribute="height" id="Ut2-IA-MCq"/>
                             <constraint firstItem="4tZ-a4-4pb" firstAttribute="centerX" secondItem="QbT-L7-xpw" secondAttribute="centerX" id="aLL-ew-bfH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4tZ-a4-4pb" secondAttribute="bottom" constant="20" id="r49-MY-JCw"/>
+                            <constraint firstItem="QbT-L7-xpw" firstAttribute="height" secondItem="tF8-r6-3Zp" secondAttribute="height" id="spF-HX-amX"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6X0-S3-1wF"/>
