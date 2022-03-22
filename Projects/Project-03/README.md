@@ -12,6 +12,5 @@ From [Hacking with Swift](https://www.hackingwithswift.com/read/3/3/wrap-up):
 ## Screenshots
 
 ![screen1](screenshots/screen1.png)
-![screen2](screenshots/screen2.png)
 
 
