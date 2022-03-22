@@ -11,7 +11,7 @@ From [Hacking with Swift](https://www.hackingwithswift.com/read/3/3/wrap-up):
 >3. Go back to project 2 and add a bar button item that shows their score when tapped.
 ## Screenshots
 
-![screen1](screenshots/screen01.png)
-![screen2](screenshots/screen02.png)
+![screen1](screenshots/screen1.png)
+![screen2](screenshots/screen2.png)
 
 
